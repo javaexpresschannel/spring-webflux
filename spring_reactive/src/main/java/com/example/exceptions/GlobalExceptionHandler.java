@@ -43,7 +43,7 @@ public class GlobalExceptionHandler extends AbstractErrorWebExceptionHandler {
         errorPropertiesMap.remove("path");
         errorPropertiesMap.remove("timestamp");
         errorPropertiesMap.remove("requestId");
-        
+        errorPropertiesMap.remove("status");
         return ServerResponse.status(HttpStatus.NOT_FOUND)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(errorPropertiesMap));

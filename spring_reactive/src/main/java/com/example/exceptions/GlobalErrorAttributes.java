@@ -32,7 +32,7 @@ public class GlobalErrorAttributes extends DefaultErrorAttributes {
 			errorDataList.add(errorData);
 			
 			errorSource.setErrorData(errorDataList);
-			map.put("errorList", errorData);
+			map.put("errorList", errorSource);
 		}
 		return map;
 	}
